@@ -1,63 +1,38 @@
-# Download Wigamig
+# wigamig implementations directory
 
-**wigamig** is shared AI research infrastructure for universities and research
-centres. To use it, install it on your computer — the code is public and this one
-command does everything (you only need `git`):
+This page lists the institutions running **wigamig**. You only need it if you're
+a **PI** registering a new lab or core, or a **mayor** listing a centre.
 
-```sh
-curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/wigamig_public/main/install-wigamig.sh
-sh install-wigamig.sh
-```
+- **A member of a lab that already uses wigamig?** You don't come here — just ask
+  your PI for a membership ID (they issue it; you run `wigamig import-card`).
+- **New to wigamig?** Install it first:
+  [github.com/hallettmiket/wigamig](https://github.com/hallettmiket/wigamig).
 
-It downloads wigamig to `~/repos/wigamig`, installs the `wigamig` command, and
-wires up the shared agents, rules, and tools. The source lives at
-[github.com/hallettmiket/wigamig](https://github.com/hallettmiket/wigamig).
+> This repository collects **nothing** — no form, no issues. A join request is
+> **encrypted to your institution's registrar** and emailed to them; only they
+> can read it, and nothing about you is ever posted publicly.
 
-Then find your situation below.
+## PIs — register a lab or core
 
----
-
-## I'm a member of a lab that already uses wigamig
-
-Just ask your **PI** for a **membership certificate**. They issue it to you; you
-run the one `wigamig import-card` command they give you, and your dashboard
-recognises your role. That's it — you don't email the mayor or touch this
-directory.
-
-## I'm a PI of a lab or core
-
-Install wigamig (above), then **accept members by issuing them certificates**. A
-member requests one with `wigamig enroll`; you sign and return it with:
-
-```sh
-wigamig issue-member-card <their-request> --group <your-lab>
-```
-
-Full walkthrough:
-[`docs/identity.md`](https://github.com/hallettmiket/wigamig/blob/main/docs/identity.md).
-
-## My institution runs wigamig and I want to start a lab or core
-
-You need the **mayor** to register your group. Send them an encrypted request —
-one script asks a few questions, encrypts it to your institution's key, and opens
-your email ready to send:
+Find your institution in the directory below, then run the join script. It asks a
+few questions, encrypts your request to that centre's key, and opens your email
+app ready to send:
 
 ```sh
 curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/wigamig_public/main/join/wigamig-join.sh
 sh wigamig-join.sh
 ```
 
-Nothing about you is posted publicly — the request is encrypted so only your
-institution's registrar can read it. Find your institution in the directory
-below. Once the mayor approves, they send you back your **PI certificate** to
-import.
+Press **Send**. Once the mayor approves, they send you back your **PI ID** to
+import. *(By hand instead? [`join/join-form.txt`](join/join-form.txt) is the plain
+form.)*
 
-## I want to run wigamig at my institution
+## Mayors — list your centre
 
-You'll bootstrap a new **centre** and become its *mayor*. Install wigamig (above),
-then follow the mayor setup in the code repo:
-[github.com/hallettmiket/wigamig](https://github.com/hallettmiket/wigamig) →
-**"Install wigamig at your institution."**
+From your centre, run `wigamig centre-hub-publish` — it writes your directory row
+here plus your signing key + revocation list (so members can verify IDs) and
+prints a `git push` for you to run. See the mayor setup in the
+[code repo](https://github.com/hallettmiket/wigamig).
 
 ## Institutions using wigamig
 
