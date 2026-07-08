@@ -37,6 +37,12 @@ institution. Expect **two things back**:
 2. **A Slack invite** to your institution's `wigamig-<centre>` workspace,
    included in that reply. **Accept it** — from then on, everything happens in
    Slack, and you'll land in a private channel for your lab or core.
+3. **A signed membership card.** Once you've installed wigamig, your PI (or the
+   Mayor) issues you a cryptographically signed identity card — you import it
+   with one command (`wigamig import-card`) and your dashboard then recognises
+   your role. It's how wigamig knows you really belong to your group. The full
+   walkthrough lives in the code repo:
+   [`docs/identity.md`](https://github.com/hallettmiket/wigamig/blob/main/docs/identity.md).
 
 If a few days pass with no reply, reply to your own sent email to nudge them.
 
