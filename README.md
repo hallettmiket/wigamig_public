@@ -1,11 +1,11 @@
-# wigamig implementations directory
+# murmurent implementations directory
 
-This page lists the institutions running **wigamig**. You only need it if you're
+This page lists the institutions running **murmurent**. You only need it if you're
 a **PI** registering a new lab or core, or a **mayor** listing a centre.
 
-- **A member of a lab that already uses wigamig?** You don't come here — just ask
-  your PI for a membership ID (they issue it; you run `wigamig import-card`).
-- **New to wigamig?** Install it first:
+- **A member of a lab that already uses murmurent?** You don't come here — just ask
+  your PI for a membership ID (they issue it; you run `murmurent import-card`).
+- **New to murmurent?** Install it first:
   [github.com/hallettmiket/wigamig](https://github.com/hallettmiket/wigamig).
 
 > This repository collects **nothing** — no form, no issues. A join request is
@@ -29,12 +29,12 @@ form.)*
 
 ## Mayors — list your centre
 
-From your centre, run `wigamig centre-hub-publish` — it writes your directory row
+From your centre, run `murmurent centre-hub-publish` — it writes your directory row
 here plus your signing key + revocation list (so members can verify IDs) and
 prints a `git push` for you to run. See the mayor setup in the
 [code repo](https://github.com/hallettmiket/wigamig).
 
-## Institutions using wigamig
+## Institutions using murmurent
 
 One institution may run more than one installation (a centre, a department, a
 named group), so match on the institution *and* the description. The **age key**
@@ -44,5 +44,5 @@ is the public key the join script encrypts to.
 |---|---|---|---|
 | Western University | Western QA Centre | tbrowne5@uwo.ca | age1pa3tqu0xlcm0tqmgr5j63nh50k2xhvxd2yfcxd760dxyhuzat9nqqmexah |
 
-**Don't see your institution?** It may not run wigamig yet — ask your PI or lab
+**Don't see your institution?** It may not run murmurent yet — ask your PI or lab
 manager. (Registrars add their row here when they go live.)

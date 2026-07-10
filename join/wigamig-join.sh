@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# wigamig-join.sh — the one script a prospective member runs to join a wigamig
+# wigamig-join.sh — the one script a prospective member runs to join a murmurent
 # institution. It:
 #   1. installs `age` (encryption) if you don't have it,
 #   2. asks you a few questions (no file to edit),
@@ -154,7 +154,7 @@ EOF
   elif command -v xclip >/dev/null 2>&1;   then printf '%s' "$BODY" | xclip -selection clipboard; COPIED=1
   else COPIED=0; fi
 
-  SUBJECT="wigamig%20join%20request"
+  SUBJECT="murmurent%20join%20request"
   BODY_ENC="$(printf '%s' "$BODY" | urlencode)"
   OPEN=""
   command -v open >/dev/null 2>&1 && OPEN="open"
@@ -167,7 +167,7 @@ EOF
     say ""
     say "If the message is empty (some email apps ignore a pre-filled body):"
   else
-    say "Email this to: ${EMAIL}   (subject: wigamig join request)"
+    say "Email this to: ${EMAIL}   (subject: murmurent join request)"
     say "Put the encrypted request in the body:"
   fi
   if [ "$COPIED" = 1 ]; then
@@ -180,7 +180,7 @@ EOF
   say "──────────────────────────────────────────────────────────────────────"
   say "WHAT HAPPENS NEXT — please read:"
   say ""
-  say "  1. The Mayor (the person who runs wigamig at ${INSTITUTION})"
+  say "  1. The Mayor (the person who runs murmurent at ${INSTITUTION})"
   say "     will REPLY TO YOU BY EMAIL. Watch your inbox (and spam folder)."
   say "  2. That reply will include a SLACK INVITE to the '${INSTITUTION}'"
   say "     wigamig workspace. Accept it — Slack is where everything happens"
@@ -194,13 +194,13 @@ EOF
   offer_install
 }
 
-# --- optional: download + install the wigamig software ---------------------
+# --- optional: download + install the murmurent software -------------------
 offer_install() {
   say ""
-  say "You can INSTALL the wigamig software now, while you wait for the reply —"
+  say "You can INSTALL the murmurent software now, while you wait for the reply —"
   say "the code is public, so this doesn't need anyone's approval. It just gets"
   say "your computer ready so you're set the moment you're added."
-  case "$(ask 'Download + install wigamig now? [Y/n] ')" in
+  case "$(ask 'Download + install murmurent now? [Y/n] ')" in
     n*|N*) say ""; say "No problem. When you're ready, run:";
            say "  curl -fsSL -O $HUB_RAW/install-wigamig.sh && sh install-wigamig.sh";
            return 0 ;;

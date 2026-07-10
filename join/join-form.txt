@@ -1,4 +1,4 @@
-# wigamig join request — fill in the value after each colon, then encrypt this
+# murmurent join request — fill in the value after each colon, then encrypt this
 # file with wigamig-join.sh and email the result to your institution's
 # registrar (address + key are in the directory at the repo root).
 #

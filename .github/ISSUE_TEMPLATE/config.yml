@@ -3,6 +3,6 @@
 # institution's registrar (see the directory in README.md).
 blank_issues_enabled: false
 contact_links:
-  - name: Join a wigamig institution (by email)
+  - name: Join a murmurent institution (by email)
     url: https://github.com/hallettmiket/wigamig_public#how-to-join
     about: To join, find your institution in the README directory and email its registrar. This repo does not accept issues.
