@@ -42,5 +42,5 @@ prints a `git push` for you to run. See the mayor setup in the
 
 | Institution | Installation | Email to join | age key (encrypt to this) |
 |---|---|---|---|
-| Western University | Western QA Centre | tbrowne5@uwo.ca | age1pa3tqu0xlcm0tqmgr5j63nh50k2xhvxd2yfcxd760dxyhuzat9nqqmexah |
+| Western University | Western Test Centre | tbrowne5@uwo.ca | age1y43uxhv7dp50mw8qnrqwh4wvamp7adz4alxezpxang4wn9usuumqmneuat |
 
