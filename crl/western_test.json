@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "version": 1,
+    "centre": "western_test",
+    "serial": 0,
+    "issued_at": "2026-07-13T13:41:30Z",
+    "revoked": []
+  },
+  "signature": "HkoyAmqlknewpsMWfkg3QSMmfXU2d1/aRw50fPck4sN3JXyQxJva8D0Y2jYdJBV6CBJ64E+yXn5SIZHR9LFGCw=="
+}

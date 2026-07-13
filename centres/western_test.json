@@ -1,0 +1,12 @@
+{
+  "payload": {
+    "unique_name": "western_test",
+    "institution": "Western University",
+    "name": "Western Test Centre",
+    "join_email": "tbrowne5@uwo.ca",
+    "age_pubkey": "age1y43uxhv7dp50mw8qnrqwh4wvamp7adz4alxezpxang4wn9usuumqmneuat",
+    "signing_pubkey": "ed25519:CnDAfWe0enZqjnrEEfiKsZAFJXy/DFediQn+m906C5I=",
+    "root_fingerprint": "SHA256:Y1lED9lkx1jIk1ee5cIkCmkUCiD4RuXWa0kEGEYNB9k"
+  },
+  "signature": "6N7YqBRGshyt/rk3sAw1FlnDIRH6gxHsDKRp9vZ3eIKKiN9W4zdu3rv6r5RKDpygXVW76YtaqS8ax+Z2cS3yCA=="
+}
