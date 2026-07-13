@@ -1,19 +1,21 @@
-# Murmurent Centre directory
+# murmurent implementations directory
 
-This page lists implementations of **Murmurent** at different institutions.
-You only need this repository if you're a **PI** registering a lab or core, or a **mayor**
-listing a centre.
+This page lists the institutions running **murmurent**. You only need it if you're
+a **PI** registering a new lab or core, or a **mayor** listing a centre.
 
-Anyone interested in obtaining Murmurent, install this first:
+- **A member of a lab that already uses murmurent?** You don't come here — just ask
+  your PI for a membership ID (they issue it; you run `murmurent import-card`).
+- **New to murmurent?** Install it first:
   [github.com/hallettmiket/murmurent](https://github.com/hallettmiket/murmurent).
 
-> This repository only facilitates **encrypted join requests** to your institution's Mayor
-> via email.
+> This repository collects **nothing** — no form, no issues. A join request is
+> **encrypted to your institution's registrar** and emailed to them; only they
+> can read it, and nothing about you is ever posted publicly.
 
 ## PIs — register a lab or core
 
-Find your institution in the directory below, then run the join script.
-It asks a few questions, encrypts your request to that centre's key, and opens your email
+Find your institution in the directory below, then run the join script. It asks a
+few questions, encrypts your request to that centre's key, and opens your email
 app ready to send:
 
 ```sh
@@ -21,15 +23,10 @@ curl -fsSL -O https://raw.githubusercontent.com/hallettmiket/murmurent_public/ma
 sh murmurent-join.sh
 ```
 
-Press **Send**. Once the mayor approves, they email you back your signed **PI ID** —
-import it with:
-
-```sh
-murmurent import-card <file> --trust-root <the centre's published signing recipient>
-```
-
-Confirm the trust root's fingerprint with the mayor out-of-band (e.g. on a call) the
-first time — it's what makes the chain of trust actually trustworthy.
+Press **Send**. Once the mayor approves, they send you back your **PI ID** — see
+[Registering your lab or core with a centre](https://github.com/hallettmiket/murmurent#pis-if-you-are-a-pi-registering-your-lab-or-core-with-an-existing-centre)
+in the main README for how to import it and what comes next. *(By hand instead?
+[`join/join-form.txt`](join/join-form.txt) is the plain form.)*
 
 ## Mayors — list your centre
 
@@ -40,7 +37,13 @@ prints a `git push` for you to run. See the mayor setup in the
 
 ## Institutions using murmurent
 
+One institution may run more than one installation (a centre, a department, a
+named group), so match on the institution *and* the description. The **age key**
+is the public key the join script encrypts to.
+
 | Institution | Installation | Email to join | age key (encrypt to this) |
 |---|---|---|---|
 | Western University | Western Test Centre | tbrowne5@uwo.ca | age1y43uxhv7dp50mw8qnrqwh4wvamp7adz4alxezpxang4wn9usuumqmneuat |
 
+**Don't see your institution?** It may not run murmurent yet — ask your PI or lab
+manager. (Registrars add their row here when they go live.)
