@@ -1,0 +1,10 @@
+{
+  "payload": {
+    "version": 1,
+    "centre": "Western_AI_Test_Centre",
+    "serial": 0,
+    "issued_at": "2026-07-21T20:53:13Z",
+    "revoked": []
+  },
+  "signature": "hQwg0+R9Np0pV0RZV6qNZhgSZn6DCbvayFU6S0/Un5jZgKB8k3Nzz59WDfNnwiFKuJVvjhqM1ffiD96rmrvSAA=="
+}

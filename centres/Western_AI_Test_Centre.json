@@ -1,0 +1,12 @@
+{
+  "payload": {
+    "unique_name": "Western_AI_Test_Centre",
+    "institution": "Western University",
+    "name": "Western AI Test Centre",
+    "join_email": "tbrowne5@uwo.ca",
+    "age_pubkey": "age1tghhgvz5p0gnx63d6za9xvmqnklw7hjq3tgl72af4ercvgkjv38qea9swg",
+    "signing_pubkey": "ed25519:yQriFOemLLBAWD3vwNvSpU9ePgsvoLzejNdgK2EJ/8k=",
+    "root_fingerprint": "SHA256:JORs3UgE2ALs/MYDMpHqmecjCiXXo5emeW+SrT/Wh5A"
+  },
+  "signature": "AbG5apUeD9guIpu0wQV5rV0EJLqIs+lCJ4gYlcv32k9RcMJ3KdCpGGzRukLx0vuUe5bOc5twTaqqcqVfeCzJCA=="
+}
